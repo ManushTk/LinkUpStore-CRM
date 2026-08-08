@@ -1,17 +1,17 @@
 import React from "react";
-import { useForm } from "react-hook-form"; // 1. Imports at the top
+import { useForm } from "react-hook-form";
+import { customersApi } from "../services/api";
 
-// 2. Component name MUST start with a CAPITAL letter "AddCustomer"
 const AddCustomer = () => {
-  // 3. Hooks MUST be called INSIDE the component function!
   const {
     register,
     handleSubmit,
     formState: { errors },
   } = useForm();
 
-  const onSubmit = (data) => {
-    console.log("Form Submitted:", data);
+  const onSubmit = async (data) => {
+    await customersApi.post("", data);
+    alert("Data submitted successfull..");
   };
 
   return (

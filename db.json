@@ -1,0 +1,18 @@
+{
+  "customers": [
+    {
+      "id": "iusuaULhT6s"
+    },
+    {
+      "name": "Manush TK",
+      "email": "tkmanush1@gmail.com",
+      "phone": "7034947035",
+      "company": "Tech Solutions",
+      "city": "Calicut",
+      "status": "active",
+      "notes": "hai",
+      "id": "NK_SkOjjmYc"
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
+}
