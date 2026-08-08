@@ -103,9 +103,6 @@ const Sidebar = () => {
 
         {/* Navigation Menu */}
         <nav className="space-y-1.5">
-          <p className="px-3 text-xs font-bold text-blue-300/50 uppercase tracking-wider mb-2">
-            Main Menu
-          </p>
           {navItems.map((item) => (
             <NavLink
               key={item.name}
