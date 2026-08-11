@@ -10,8 +10,13 @@ const AddCustomer = () => {
   } = useForm();
 
   const onSubmit = async (data) => {
-    await customersApi.post("", data);
-    alert("Data submitted successfull..");
+    try {
+      await customersApi.post("", data);
+      alert("Data submitted successfull..");
+    } catch (err) {
+      alert("Server issue found");
+      console.log("something went wrong...", err);
+    }
   };
 
   return (
@@ -24,7 +29,6 @@ const AddCustomer = () => {
       >
         {/* 2-Column Inputs */}
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
-          {/* Name */}
           <div>
             <label className="block text-xs font-semibold text-blue-200 uppercase tracking-wider mb-2">
               Full Name *
@@ -42,7 +46,6 @@ const AddCustomer = () => {
             )}
           </div>
 
-          {/* Email */}
           <div>
             <label className="block text-xs font-semibold text-blue-200 uppercase tracking-wider mb-2">
               Email Address *
@@ -63,7 +66,6 @@ const AddCustomer = () => {
             )}
           </div>
 
-          {/* Phone */}
           <div>
             <label className="block text-xs font-semibold text-blue-200 uppercase tracking-wider mb-2">
               Phone Number *
@@ -81,7 +83,6 @@ const AddCustomer = () => {
             )}
           </div>
 
-          {/* Company */}
           <div>
             <label className="block text-xs font-semibold text-blue-200 uppercase tracking-wider mb-2">
               Company
@@ -94,7 +95,6 @@ const AddCustomer = () => {
             />
           </div>
 
-          {/* City */}
           <div>
             <label className="block text-xs font-semibold text-blue-200 uppercase tracking-wider mb-2">
               City
@@ -107,7 +107,6 @@ const AddCustomer = () => {
             />
           </div>
 
-          {/* Status Select */}
           <div>
             <label className="block text-xs font-semibold text-blue-200 uppercase tracking-wider mb-2">
               Status *
@@ -130,7 +129,6 @@ const AddCustomer = () => {
           </div>
         </div>
 
-        {/* Notes Textarea */}
         <div>
           <label className="block text-xs font-semibold text-blue-200 uppercase tracking-wider mb-2">
             Notes
@@ -143,7 +141,6 @@ const AddCustomer = () => {
           ></textarea>
         </div>
 
-        {/* Submit Button */}
         <div className="flex justify-end pt-2">
           <button
             type="submit"
