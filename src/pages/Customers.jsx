@@ -14,6 +14,14 @@ const Customers = () => {
     }
   };
 
+  const dltcustomer = async (id) => {
+    if (confirm("Are you sure you want to delete this customer?")) {
+      await customersApi.delete(`/${id}`);
+      const newData = customers.filter((customer) => customer.id !== id);
+      setCustomers(newData);
+    }
+  };
+  
   useEffect(() => {
     getData();
   }, []);
@@ -116,7 +124,12 @@ const Customers = () => {
                     <button className="flex-1 sm:flex-initial py-1.5 px-3 bg-[#0c132c] hover:bg-indigo-950 text-indigo-300 border border-indigo-800/60 rounded-lg text-xs font-medium transition text-center">
                       Edit
                     </button>
-                    <button className="flex-1 sm:flex-initial py-1.5 px-3 bg-[#0c132c] hover:bg-rose-950 text-rose-400 border border-rose-800/60 rounded-lg text-xs font-medium transition text-center">
+                    <button
+                      onClick={() => {
+                        dltcustomer(customer.id);
+                      }}
+                      className="flex-1 sm:flex-initial py-1.5 px-3 bg-[#0c132c] hover:bg-rose-950 text-rose-400 border border-rose-800/60 rounded-lg text-xs font-medium transition text-center"
+                    >
                       Delete
                     </button>
                   </div>

@@ -1,9 +1,6 @@
 {
   "customers": [
     {
-      "id": "iusuaULhT6s"
-    },
-    {
       "name": "Manush TK",
       "email": "tkmanush1@gmail.com",
       "phone": "7034947035",
@@ -12,46 +9,6 @@
       "status": "active",
       "notes": "hai",
       "id": "NK_SkOjjmYc"
-    },
-    {
-      "name": "Manush TK",
-      "email": "tkmanush1@gmail.com",
-      "phone": "7034947035",
-      "company": "Premium",
-      "city": "Calicut",
-      "status": "completed",
-      "notes": "",
-      "id": "fDBWNTm1-Ac"
-    },
-    {
-      "name": "Manush TK",
-      "email": "tkmanush1@gmail.com",
-      "phone": "7034947035",
-      "company": "Premium",
-      "city": "Calicut",
-      "status": "inactive",
-      "notes": "",
-      "id": "xaT66jUjlJY"
-    },
-    {
-      "name": "customer",
-      "email": "cu@gmai.com",
-      "phone": "8188188818",
-      "company": "Apex Global",
-      "city": "Calicut",
-      "status": "called",
-      "notes": "",
-      "id": "zA3eB_ePVS4"
-    },
-    {
-      "name": "hg",
-      "email": "grde@gmail.com",
-      "phone": "rg",
-      "company": "",
-      "city": "",
-      "status": "pending",
-      "notes": "",
-      "id": "QO1d08w60iI"
     }
   ],
   "$schema": "./node_modules/json-server/schema.json"
