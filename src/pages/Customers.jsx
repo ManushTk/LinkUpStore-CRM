@@ -123,9 +123,12 @@ const Customers = () => {
                         View
                       </button>
                     </Link>
-                    <button className="flex-1 sm:flex-initial py-1.5 px-3 bg-[#0c132c] hover:bg-indigo-950 text-indigo-300 border border-indigo-800/60 rounded-lg text-xs font-medium transition text-center">
-                      Edit
-                    </button>
+
+                    <Link to={`/edit-customer/${customer.id}`}>
+                      <button className="flex-1 sm:flex-initial py-1.5 px-3 bg-[#0c132c] hover:bg-indigo-950 text-indigo-300 border border-indigo-800/60 rounded-lg text-xs font-medium transition text-center">
+                        Edit
+                      </button>
+                    </Link>
                     <button
                       onClick={() => {
                         dltcustomer(customer.id);

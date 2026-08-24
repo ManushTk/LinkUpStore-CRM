@@ -6,7 +6,7 @@
       "phone": "7034947035",
       "company": "Tech Solutions",
       "city": "Calicut",
-      "status": "active",
+      "status": "completed",
       "notes": "hai",
       "id": "NK_SkOjjmYc"
     },
@@ -26,7 +26,7 @@
       "phone": "70349-47035",
       "company": "Premium",
       "city": "",
-      "status": "pending",
+      "status": "active",
       "notes": "",
       "id": "7iY3e8zxYqc"
     }

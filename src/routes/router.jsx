@@ -6,6 +6,7 @@ import AddCustomer from "../pages/AddCustomer";
 import Profile from "../pages/Profile";
 import NotFound from "../pages/NotFound"; // 👈 Import 404 Page
 import ViewCustomer from "../pages/ViewCustomer";
+import EditCustomer from "../pages/EditCustomer";
 
 const router = createBrowserRouter([
   {
@@ -28,6 +29,10 @@ const router = createBrowserRouter([
       {
         path: "add-customer",
         element: <AddCustomer />,
+      },
+      {
+        path: "edit-customer/:id",
+        element: <EditCustomer />,
       },
       {
         path: "profile",
