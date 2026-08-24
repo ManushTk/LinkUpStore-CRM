@@ -21,7 +21,7 @@ const Customers = () => {
       setCustomers(newData);
     }
   };
-  
+
   useEffect(() => {
     getData();
   }, []);
@@ -118,9 +118,11 @@ const Customers = () => {
 
                 <td className="block sm:table-cell py-2 sm:py-4 px-0 sm:px-6 text-right border-t sm:border-none border-[#1e2952] mt-2 sm:mt-0 pt-2 sm:pt-4">
                   <div className="flex items-center justify-end gap-2">
-                    <button className="flex-1 sm:flex-initial py-1.5 px-3 bg-[#0c132c] hover:bg-cyan-950 text-cyan-400 border border-cyan-800/60 rounded-lg text-xs font-medium transition text-center">
-                      View
-                    </button>
+                    <Link to={`${customer.id}`}>
+                      <button className="flex-1 sm:flex-initial py-1.5 px-3 bg-[#0c132c] hover:bg-cyan-950 text-cyan-400 border border-cyan-800/60 rounded-lg text-xs font-medium transition text-center">
+                        View
+                      </button>
+                    </Link>
                     <button className="flex-1 sm:flex-initial py-1.5 px-3 bg-[#0c132c] hover:bg-indigo-950 text-indigo-300 border border-indigo-800/60 rounded-lg text-xs font-medium transition text-center">
                       Edit
                     </button>

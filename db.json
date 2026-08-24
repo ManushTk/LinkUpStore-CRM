@@ -9,6 +9,26 @@
       "status": "active",
       "notes": "hai",
       "id": "NK_SkOjjmYc"
+    },
+    {
+      "name": "Manush TK",
+      "email": "tkmanush1@gmail.com",
+      "phone": "8188188818",
+      "company": "Premium",
+      "city": "ds",
+      "status": "active",
+      "notes": "",
+      "id": "IihCC3VpdDw"
+    },
+    {
+      "name": "Manush TK",
+      "email": "tkmanush1@gmail.com",
+      "phone": "70349-47035",
+      "company": "Premium",
+      "city": "",
+      "status": "pending",
+      "notes": "",
+      "id": "7iY3e8zxYqc"
     }
   ],
   "$schema": "./node_modules/json-server/schema.json"

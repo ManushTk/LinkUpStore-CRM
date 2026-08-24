@@ -1,6 +1,7 @@
 import React from "react";
 import { useForm } from "react-hook-form";
 import { customersApi } from "../services/api";
+import { useNavigate } from "react-router-dom";
 
 const AddCustomer = () => {
   const {
@@ -9,10 +10,13 @@ const AddCustomer = () => {
     formState: { errors },
   } = useForm();
 
+  const navigate = useNavigate();
+
   const onSubmit = async (data) => {
     try {
       await customersApi.post("", data);
       alert("Data submitted successfull..");
+      navigate("/customers");
     } catch (err) {
       alert("Server issue found");
       console.log("something went wrong...", err);
