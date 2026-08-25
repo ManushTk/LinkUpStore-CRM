@@ -39,7 +39,7 @@ const router = createBrowserRouter([
         element: <Profile />,
       },
       {
-        path: "*", // 👈 Catches any invalid / unknown URL paths
+        path: "*", //unknown URL paths
         element: <NotFound />,
       },
     ],

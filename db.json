@@ -11,24 +11,24 @@
       "id": "NK_SkOjjmYc"
     },
     {
-      "name": "Manush TK",
-      "email": "tkmanush1@gmail.com",
+      "name": "C1",
+      "email": "C1@gmail.com",
       "phone": "8188188818",
-      "company": "Premium",
-      "city": "ds",
-      "status": "active",
+      "company": "Apex Global",
+      "city": "TVM",
+      "status": "called",
       "notes": "",
-      "id": "IihCC3VpdDw"
+      "id": "ajWfN6K_M8k"
     },
     {
-      "name": "Manush TK",
-      "email": "tkmanush1@gmail.com",
-      "phone": "70349-47035",
-      "company": "Premium",
-      "city": "",
+      "name": "C2",
+      "email": "C2@gmail.com",
+      "phone": "9876543210",
+      "company": "Digital World",
+      "city": "Kochi",
       "status": "active",
       "notes": "",
-      "id": "7iY3e8zxYqc"
+      "id": "m2XIzprrfEk"
     }
   ],
   "$schema": "./node_modules/json-server/schema.json"

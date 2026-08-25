@@ -57,16 +57,6 @@ const Dashboard = () => {
             {customers.length}
           </h2>
         </div>
-
-        {/* Total Revenue */}
-        <div className="bg-[#111936] border border-[#1e2952] rounded-2xl p-5 shadow-xl">
-          <span className="text-xs text-blue-200/60 uppercase font-semibold">
-            Total Revenue (LTV)
-          </span>
-          <h2 className="text-3xl font-bold text-emerald-400 mt-2">
-            ₹4,85,900
-          </h2>
-        </div>
       </div>
 
       {/* Customer Status Breakdown Cards (All Statuses) */}
